@@ -1,5 +1,3 @@
-
-// Tabs simples por página
 function setupTabs(section){
   const tabbar = section.querySelector('.tabbar');
   if(!tabbar) return;
@@ -18,7 +16,6 @@ function setupTabs(section){
 
 document.addEventListener('DOMContentLoaded', ()=>{
   document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
-  // smooth scroll inside same page only
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
     a.addEventListener('click', e=>{
       const id = a.getAttribute('href');
