@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <title>Animation — Portfólio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="frame">
+
+  <header class="brand" aria-label="Topo do site">
+    <h1>Bernardo Gomes</h1>
+    <small>João Cartão</small>
+    <nav class="links" aria-label="Redes e contactos">
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="#footer"><i class="fa-solid fa-envelope"></i> Contactos</a>
+    </nav>
+    <div class="topline" role="presentation"></div>
+  </header>
+
+  <section id="animation">
+    <div class="section-frame">
+      <div class="section-header no-border">
+        <div class="section-title">
+          <a class="home-btn" href="index.html" aria-label="Voltar à Home">
+            <span class="chev">⟵</span> Home
+          </a>
+          <h2>Animation</h2>
+        </div>
+
+        <div class="tabbar tabs-full" role="tablist" aria-label="Categorias de Animation">
+          <button class="tab" role="tab" aria-selected="true"  data-target="an-2d">2D Animation</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="an-chars">Characters</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="an-sketches">Sketches</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-grid" id="an-2d">
+          <div class="thumb" title="thumbnail"></div>
+          <div class="thumb"></div><div class="thumb"></div><div class="thumb"></div>
+          <div class="thumb"></div><div class="thumb"></div><div class="thumb"></div>
+          <div class="thumb"></div><div class="thumb"></div>
+        </div>
+
+        <div class="gallery-grid" id="an-chars" hidden>
+          <div class="thumb"></div><div class="thumb"></div><div class="thumb"></div><div class="thumb"></div>
+          <div class="thumb"></div><div class="thumb"></div><div class="thumb"></div><div class="thumb"></div>
+        </div>
+
+        <div class="gallery-grid" id="an-sketches" hidden>
+          <div class="thumb" style="min-height:120px"></div>
+          <div class="thumb" style="min-height:120px"></div>
+          <div class="thumb" style="min-height:120px"></div>
+          <div class="thumb" style="min-height:120px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="scripts/script.js"></script>
+</body>
+</html>

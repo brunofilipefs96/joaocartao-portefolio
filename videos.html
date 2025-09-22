@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <title>Videos — Portfólio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="frame">
+
+  <header class="brand" aria-label="Topo do site">
+    <h1>Bernardo Gomes</h1>
+    <small>João Cartão</small>
+    <nav class="links" aria-label="Redes e contactos">
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="#footer"><i class="fa-solid fa-envelope"></i> Contactos</a>
+    </nav>
+    <div class="topline" role="presentation"></div>
+  </header>
+
+  <section id="videos">
+    <div class="section-frame">
+      <div class="section-header no-border">
+        <div class="section-title">
+          <a class="home-btn" href="index.html" aria-label="Voltar à Home">
+            <span class="chev">⟵</span> Home
+          </a>
+          <h2>Videos</h2>
+        </div>
+
+        <div class="tabbar tabs-full" role="tablist" aria-label="Categorias de Vídeo">
+          <button class="tab" role="tab" aria-selected="true"  data-target="vd-clips">Video Clips</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="vd-promo">Promocional</button>
+          <button class="tab" role="tab" aria-selected="false" data-target="vd-outros">Others</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-grid" id="vd-clips">
+          <div class="thumb" style="min-height:140px"></div>
+          <div class="thumb" style="min-height:140px"></div>
+          <div class="thumb" style="min-height:140px"></div>
+          <div class="thumb" style="min-height:140px"></div>
+          <div class="thumb" style="min-height:110px"></div>
+        </div>
+
+        <div class="gallery-grid" id="vd-promo" hidden>
+          <div class="thumb" style="min-height:140px"></div>
+          <div class="thumb" style="min-height:140px"></div>
+          <div class="thumb" style="min-height:110px"></div>
+        </div>
+
+        <div class="gallery-grid" id="vd-outros" hidden>
+          <div class="thumb" style="min-height:120px"></div>
+          <div class="thumb" style="min-height:120px"></div>
+          <div class="thumb" style="min-height:120px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="scripts/script.js"></script>
+</body>
+</html>
