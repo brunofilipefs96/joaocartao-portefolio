@@ -137,7 +137,7 @@ nav.links a:hover::after {
     padding: 0;
     position: relative;
     overflow: hidden;
-    cursor: pointer
+    cursor: default
 }
 
 .tile h3 {
@@ -150,34 +150,37 @@ nav.links a:hover::after {
     font-size: clamp(18px, 2.6vw, 28px)
 }
 
-.tile .ghost {
-    position: relative;
-    width: min(86%, 320px);
-    aspect-ratio: 3/5;
-    height: 80%;
-    margin-top: 42px;
-    border: 4px solid var(--ink);
-    border-radius: 0;
-    background: linear-gradient(180deg, #b1b1b1, #9c9c9c)
+.tile .ghost{
+    display:block;
+    position:relative;
+    width:min(86%,320px);
+    aspect-ratio:3/5;
+    height:80%;
+    margin-top:42px;
+    border:4px solid var(--ink);
+    border-radius:0;
+    background:linear-gradient(180deg,#b1b1b1,#9c9c9c);
+    cursor:pointer;
+    text-decoration:none;
 }
 
-.tile .ghost::after {
-    content: "";
-    position: absolute;
-    inset: -6px;
-    border-radius: 0;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity .2s ease;
-    background: linear-gradient(90deg, var(--ink) 0 50%, transparent 50% 100%) top left/16px 4px repeat-x,
-    linear-gradient(90deg, var(--ink) 0 50%, transparent 50% 100%) bottom left/16px 4px repeat-x,
-    linear-gradient(0deg, var(--ink) 0 50%, transparent 50% 100%) top left/4px 16px repeat-y,
-    linear-gradient(0deg, var(--ink) 0 50%, transparent 50% 100%) top right/4px 16px repeat-y
+.tile .ghost::after{
+    content:"";
+    position:absolute;inset:-6px;border-radius:0;pointer-events:none;opacity:0;transition:opacity .2s ease;
+    background:
+            linear-gradient(90deg,var(--ink) 0 50%,transparent 50% 100%) top left/16px 4px repeat-x,
+            linear-gradient(90deg,var(--ink) 0 50%,transparent 50% 100%) bottom left/16px 4px repeat-x,
+            linear-gradient(0deg,var(--ink) 0 50%,transparent 50% 100%) top left/4px 16px repeat-y,
+            linear-gradient(0deg,var(--ink) 0 50%,transparent 50% 100%) top right/4px 16px repeat-y
+}
+.tile .ghost:hover::after,
+.tile .ghost:focus-visible::after{
+    opacity:1;animation:dashmove 1.2s linear infinite
 }
 
-.tile:hover .ghost::after {
-    opacity: 1;
-    animation: dashmove 1.2s linear infinite
+.tile .ghost:focus-visible{
+    outline:3px solid var(--ink);
+    outline-offset:3px;
 }
 
 @keyframes dashmove {
