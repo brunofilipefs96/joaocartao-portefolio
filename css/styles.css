@@ -28,8 +28,7 @@ body {
     background:
             radial-gradient(1200px 600px at 20% -10%, #0f2147 0%, rgba(0,0,0,0) 60%),
             radial-gradient(900px 500px at 85% 110%, #111b3a 0%, rgba(0,0,0,0) 55%),
-            linear-gradient(180deg, #000 0%, #151a2f 100%);    radial-gradient(900px 500px at 85% 110%, #101318 0%, rgba(0, 0, 0, 0) 55%),
-    linear-gradient(180deg, #000 0%, #07080b 100%);
+            linear-gradient(180deg, #000 0%, #151a2f 100%);
 }
 
 .brand-link {
@@ -227,9 +226,9 @@ nav.links a:hover::after {
     outline-offset: 3px;
 }
 
-.index-grid .tile:nth-child(1) .ghost{background-image:url('assets/images/index_animation.jpg')}
-.index-grid .tile:nth-child(2) .ghost{background-image:url('assets/images/index_graphic-design.jpg')}
-.index-grid .tile:nth-child(3) .ghost{background-image:url('assets/images/index_videos.jpg')}
+.index-grid .tile:nth-child(1) .ghost{background-image:url('../assets/images/index_animation.jpg')}
+.index-grid .tile:nth-child(2) .ghost{background-image:url('../assets/images/index_graphic-design.jpg')}
+.index-grid .tile:nth-child(3) .ghost{background-image:url('../assets/images/index_videos.jpg')}
 
 .section-frame {
     border: none;
