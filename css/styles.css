@@ -227,17 +227,9 @@ nav.links a:hover::after {
     outline-offset: 3px;
 }
 
-.index-grid .tile:nth-child(1) .ghost {
-    background-image: url('/assets/images/index_animation.jpg');
-}
-
-.index-grid .tile:nth-child(2) .ghost {
-    background-image: url('/assets/images/index_graphic-design.jpg');
-}
-
-.index-grid .tile:nth-child(3) .ghost {
-    background-image: url('/assets/images/index_videos.jpg');
-}
+.index-grid .tile:nth-child(1) .ghost{background-image:url('assets/images/index_animation.jpg')}
+.index-grid .tile:nth-child(2) .ghost{background-image:url('assets/images/index_graphic-design.jpg')}
+.index-grid .tile:nth-child(3) .ghost{background-image:url('assets/images/index_videos.jpg')}
 
 .section-frame {
     border: none;
